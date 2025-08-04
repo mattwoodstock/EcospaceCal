@@ -14,7 +14,8 @@ source("./calibration_pointer.R")
 run_calibration(
   method = "GA",
   predprey_pairs = predprey,
-  output_base = "GA_Calibration_Run")
+  output_base = "../results/GA_Calibration_Run")
+
 
 
 
