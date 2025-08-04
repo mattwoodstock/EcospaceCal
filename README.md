@@ -63,26 +63,13 @@ Calibrating complex ecosystem models is essential for credible projections but o
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/AutoCal-Eco.git
-cd AutoCal-Eco
+git clone https://github.com/mattwoodstock/EcospaceCal.git
+cd EcospaceCal
 ```
 
 ### 2. Configure `setup.R`
 
-This step links your EwE executable and sets up the calibration command:
-
-- Navigate to `R/setup_template.R`
-- Copy and rename it as `setup.R` in the same directory:
-
-```bash
-cp R/setup_template.R R/setup.R
-```
-
-- Open `setup.R` and edit the following variables:
-  - `cmd_base` — Base command to run EwE
-  - `fn.runEwE` — Function to launch the model
-
-> Your `setup.R` is `.gitignore`d to protect local paths and credentials.
+- Open `setup.R` and edit the necessarry file locations and variables
 
 ---
 
@@ -93,7 +80,8 @@ cp R/setup_template.R R/setup.R
 In RStudio or your preferred IDE, open:
 
 ```
-analysis/run_analysis.R
+R/CalProject.Rproj
+analysis/example.R
 ```
 
 ### 2. Choose Your Optimization Method
@@ -119,6 +107,7 @@ run_calibration(
   sensitivity_file = "./data/Gulf_of_Mexico/Master Vulnerability Table.xlsx",
   sheet_number = 2,
   output_base = "GA_Calibration_Run",
+  n_cores = 8,
   config = ga_config
 )
 ```
@@ -128,7 +117,7 @@ run_calibration(
 Execute the script to begin optimization:
 
 ```r
-source("analysis/run_analysis.R")
+source("analysis/example.R")
 ```
 
 > Results are stored in a timestamped directory like:\
@@ -146,10 +135,10 @@ EcospaceCal/
 │
 ├── data/               # Input data for case studies
 │   ├── Gulf_of_Mexico/
-│   └── West_Florida_Shelf/
+│   └── **To Add More**
 │
 ├── analysis/           # Script to launch analyses
-│   └── run_analysis.R
+│   └── example.R
 │
 └── results/            # Output folder (ignored by Git)
 ```
@@ -158,9 +147,9 @@ EcospaceCal/
 
 ## Citation
 
-If you use **EcospaceCal** in your research, please cite:
+If you use **EcospaceCal** in your research, please cite this repo
 
-> Need to add once published. For now, reference this repo, if possible.
+> Will add full citation once published.
 ---
 
 ## License
