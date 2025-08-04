@@ -1,10 +1,10 @@
-# 🌍 EcospaceCal: Automated Calibration of Ecospace Models in R
+# EcospaceCal: Automated Calibration of Ecospace Models in R
 
 **EcospaceCal** is an **R-based framework** that automates the calibration of **Ecopath with Ecosim (EwE)** Ecospace models using powerful modern optimization techniques. It provides a **systematic, transparent, and repeatable** process for aligning spatial-temporal models with observational data.
 
 ---
 
-## 📌 Overview
+## Overview
 
 Calibrating complex ecosystem models is essential for credible projections but often involves **manual, time-consuming**, and **subjective tuning**—particularly in EwE models where **predator-prey vulnerability** settings require careful adjustment.
 
@@ -16,33 +16,33 @@ Calibrating complex ecosystem models is essential for credible projections but o
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-- 🔧 **Multiple Optimization Algorithms**
+- **Multiple Optimization Algorithms**
 
   - **Genetic Algorithm (GA):** Population-based, flexible, and widely used.
   - **CMA-ES:** Covariance Matrix Adaptation Evolution Strategy for efficient real-valued optimization.
   - **Bayesian Optimization (BO):** Perfect for minimizing computational load with fewer model runs.
 
-- ⚙️ **Automated Workflow**
+- **Automated Workflow**
 
   - Manages parameter selection, model runs, and results aggregation in a single loop.
 
-- ⚡ **Parallel Processing**
+- **Parallel Processing**
 
   - Speeds up computation by distributing tasks across CPU cores.
 
-- 🧠 **Smart Caching**
+- **Smart Caching**
 
   - Avoids redundant simulations by reusing previously evaluated parameter sets.
 
-- 🛡️ **Robust Error Handling**
+- **Robust Error Handling**
 
   - Includes timeouts and graceful recovery from failed model runs.
 
 ---
 
-## 💻 System Requirements
+## System Requirements
 
 - **R:** Version 4.0 or later
 - **Ecopath with Ecosim (EwE):** Installed command-line version
@@ -58,7 +58,7 @@ Calibrating complex ecosystem models is essential for credible projections but o
 
 ---
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -82,11 +82,11 @@ cp R/setup_template.R R/setup.R
   - `cmd_base` — Base command to run EwE
   - `fn.runEwE` — Function to launch the model
 
-> ⚠️ Your `setup.R` is `.gitignore`d to protect local paths and credentials.
+> Your `setup.R` is `.gitignore`d to protect local paths and credentials.
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Open the Run Script
 
@@ -131,15 +131,15 @@ Execute the script to begin optimization:
 source("analysis/run_analysis.R")
 ```
 
-> ⏳ Results are stored in a timestamped directory like:\
+> Results are stored in a timestamped directory like:\
 > `GA_Calibration_Run/GA_Run_20250804_130900/`
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-AutoCal-Eco/
+EcospaceCal/
 ├── R/                  # Core framework scripts
 │   ├── calibration_framework.R
 │   └── setup_template.R
@@ -156,22 +156,21 @@ AutoCal-Eco/
 
 ---
 
-## 📖 Citation
+## Citation
 
-If you use **AutoCal-Eco** in your research, please cite:
+If you use **EcospaceCal** in your research, please cite:
 
-> **Author A, Author B, Author C**. (*Year*). *AutoCal-Eco: An R Framework for Automated Calibration of Ecospace Models Using Modern Optimization Techniques*. **SoftwareX**, Volume, Pages. [https://doi.org/your-doi-here](https://doi.org/your-doi-here)
-
+> Need to add once published. For now, reference this repo, if possible.
 ---
 
-## 📜 License
+## License
 
 This project is released under the **MIT License**. See `LICENSE.txt` for details.
 
 ---
 
-## 🤝 Contact
+## Contact
 
 For questions, issues, or feature requests:\
-👉 [Open an Issue](https://github.com/your-username/AutoCal-Eco/issues)
+👉 [Open an Issue](https://github.com/mattwoodstock/EcospaceCal/issues)
 
