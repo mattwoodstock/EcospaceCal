@@ -48,7 +48,7 @@ End Enum
 <MODEL_RUN_TYPE>, 1, System.Int32, Type of run 1 is a normal Ecospace Run, 2 is NGOMEX scenarios, 3 is Ecospace MonteCarlo
 <ECOSIM_SCENARIO_INDEX>, 1, System.Int32
 <ECOSPACE_SCENARIO_INDEX>, 1, System.Int32
-<SPATIAL_ENABLED>, True, System.Boolean, Use the spatial temporal framework
+<SPATIAL_ENABLED>, False, System.Boolean, Use the spatial temporal framework
 <ECOSPACE_USE_IBM>, False, System.Boolean
 <ECOSPACE_USE_MULTISTANZA>, True, System.Boolean
 <N_ECOSPACE_TIMESTEPS_YEAR>, 12, System.Int32
@@ -92,6 +92,7 @@ If the array has fewer values than the groups it will just set the dispersal rat
 -----Environmental Responses-----
 Environmental response shapes format  eShapeFunctionType 1-11, Shape index from the Ecospace environmental responses interface, Function parameters from the Change Shape dialogue(in the same order as they appear in the UI grid)
 //<ECOSPACE_ENVIRONMENTAL_RESPONSE_STRING>, 1 223 1 1 | 1 224 0 0 |  1 225 1 1 | 11 226 0.00001 1000000 50000 50 , System.String[]
+
 
 
 
